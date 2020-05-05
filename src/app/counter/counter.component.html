@@ -1,0 +1,8 @@
+<!-- <div id="roundedCornerBox" style="background-color: {{ color }}"> -->
+<div id="roundedCornerBox" [ngStyle]="{ 'background-color': color }">
+  <p>Name: {{ name }}</p>
+  <p>Price: {{ price }}</p>
+  <p>Quantity: {{ value }}</p>
+  <input type="button" (click)="increment()" value="Increase" /><br />
+  <input type="button" (click)="decrement()" value="Decrease" />
+</div>

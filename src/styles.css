@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+#roundedCornerBox {
+  border: solid;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 160px;
+  margin: 10px;
+}
+
+#appCounterDiv {
+  display: inline;
+  float: left;
+}

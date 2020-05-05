@@ -1,0 +1,31 @@
+<!-- <input type="button" (click)="addSingleCounter()" value="Add Item" /> -->
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <input
+    type="text"
+    name="name"
+    placeholder="Item name"
+    formControlName="name"
+  />
+  <br />
+  <input
+    type="text"
+    name="price"
+    placeholder="Item price"
+    formControlName="price"
+  />
+  <br />
+  <button type="submit" class="btn btn-large">Add Item</button>
+</form>
+
+<br />
+<ng-container *ngFor="let counter of counters">
+  <div id="appCounterDiv">
+    <app-counter [name]="counter.name" [price]="counter.price"></app-counter>
+    <input
+      type="button"
+      (click)="deleteCounter(counter._id)"
+      value="Delete Item"
+    />
+  </div>
+</ng-container>

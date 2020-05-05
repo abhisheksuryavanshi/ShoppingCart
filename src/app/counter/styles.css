@@ -1,0 +1,7 @@
+#roundedCornerBox {
+  border: solid;
+  padding: 10px;
+  border-radius: 25px;
+  width: 200px;
+  height: 150px;
+}
